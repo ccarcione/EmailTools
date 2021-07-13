@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+deploy-nuget:
+  stage: deploy
+  image: mcr.microsoft.com/dotnet/sdk:3.1
+  script:
+    - cd EmailTools
+    - dotnet restore
+    - dotnet build
+    - dotnet pack -c Release
+    - cd bin/Release
+    - dotnet nuget push *.nupkg -s $Source -k $ApiKey
+  rules:
+    - if: $CI_COMMIT_TAG =~ /release/
