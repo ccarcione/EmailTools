@@ -1,17 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>carcione.christian@gmail.com, jesssicasala@gmail.com</Authors>
     <Company />
     <Description>Utility library for e-mail</Description>
-    <PackageProjectUrl>https://gitlab.com/projects-experimenta/emailtools</PackageProjectUrl>
-    <RepositoryType>https://gitlab.com/projects-experimenta/emailtools.git</RepositoryType>
-    <RepositoryUrl>https://gitlab.com/projects-experimenta/emailtools</RepositoryUrl>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
-    <PackageLicenseUrl>https://gitlab.com/projects-experimenta/emailtools/-/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ccarcione/EmailTools</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/ccarcione/EmailTools</RepositoryUrl>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>1.0.3</Version>
+	<PackageLicenseUrl>https://github.com/ccarcione/EmailTools/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +22,7 @@
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>licenses\LICENSE</PackagePath>
     </None>
   </ItemGroup>
 
