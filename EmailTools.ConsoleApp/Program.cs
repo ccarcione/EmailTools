@@ -8,7 +8,7 @@ namespace EmailTools.ConsoleApp
 {
     class Program
     {
-        private static EmailTools _emailTools;
+        private static ETools _emailTools;
         private static List<string> _emailDestinatario = new List<string>() { "carcione.christian@gmail.com" };
 
         static void Main(string[] args)
@@ -20,7 +20,7 @@ namespace EmailTools.ConsoleApp
                 .AddJsonFile("appsettings.json", optional: false);
             IConfiguration config = builder.Build();
 
-            _emailTools = new EmailTools(config.GetSection("EmailTools").Get<Configuration>());
+            _emailTools = new ETools(config.GetSection("EmailTools").Get<Configuration>());
             SendEmailAsyncExample().GetAwaiter().GetResult();
             SendEmailAsyncWithAttachmentExample().GetAwaiter().GetResult();
             SendEmailAsyncWithAttachmentStreamExample().GetAwaiter().GetResult();

@@ -41,7 +41,7 @@ var builder = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false);
 IConfiguration config = builder.Build();
 
-var emailTools = new EmailTools(config.GetSection("EmailTools").Get<Configuration>());
+var emailTools = new ETools(config.GetSection("EmailTools").Get<Configuration>());
 
 ```
 

@@ -13,16 +13,16 @@ namespace EmailTools
     /// <summary>
     /// http://www.mimekit.net/docs/html/Creating-Messages.htm
     /// </summary>
-    public class EmailTools
+    public class ETools
     {
         private readonly Configuration _configuration;
 
-        public EmailTools(string jsonConfiguration)
+        public ETools(string jsonConfiguration)
         {
             _configuration = JsonConvert.DeserializeObject<Configuration>(jsonConfiguration);
         }
 
-        public EmailTools(Configuration configuration)
+        public ETools(Configuration configuration)
         {
             _configuration = configuration;
         }
